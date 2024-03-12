@@ -1,5 +1,5 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Search from '../../Pages/Search';
+import Credits from '../../Pages/Credits';
 import Stack from '../Stack';
 import COLORS from '../../Shared/colors';
 
@@ -19,9 +19,7 @@ const DrawerNavigator = () => {
         drawerActiveTintColor: COLORS.black,
       }}>
         <Drawer.Screen name="Início" component={Stack} />
-        <Drawer.Screen name="Esportes" component={Search} />
-        <Drawer.Screen name="Políticas" component={Search} />
-        <Drawer.Screen name="Mundo" component={Search} />
+        <Drawer.Screen name="Créditos" component={Credits} />
       </Drawer.Navigator>
     );
 };

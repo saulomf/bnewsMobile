@@ -27,7 +27,7 @@ export async function getNewsFromAPI(params: APIParams) {
 export async function getNewsByProductFromAPI(idproduto: number) {
 
     try {
-        const { data } = await API.get(`noticias/${idproduto ? 'idproduto=' + idproduto : ''}`, {
+        const { data } = await API.get(`noticias/${idproduto ? '?idproduto=' + idproduto : ''}`, {
             params: {
                 introsize: 2040
             }

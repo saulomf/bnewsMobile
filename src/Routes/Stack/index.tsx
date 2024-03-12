@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import COLORS from "../../Shared/colors";
 import Home from "../../Pages/Home";
 import Details from "../../Pages/Details";
-import Search from "../../Pages/Search";
+import Search from "../../Pages/Credits";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
