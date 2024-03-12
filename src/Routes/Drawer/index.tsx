@@ -10,10 +10,15 @@ const DrawerNavigator = () => {
       <Drawer.Navigator initialRouteName='Menu' screenOptions={{
         headerStyle: { backgroundColor: COLORS.red },
         headerTitle: 'BRAZILIAN NEWS',
-        headerTitleStyle: { color: COLORS.black, fontWeight: 'bold', alignSelf: 'center' },
-        headerTitleAlign: 'center'
+        headerTitleStyle: { color: COLORS.gray, fontWeight: 'bold', alignSelf: 'center' },
+        headerTitleAlign: 'center',
+        drawerContentContainerStyle: { backgroundColor: COLORS.gray, flex: 1 },
+        drawerInactiveBackgroundColor: COLORS.grayLight,
+        drawerInactiveTintColor: COLORS.black,
+        drawerActiveBackgroundColor: COLORS.red,
+        drawerActiveTintColor: COLORS.black,
       }}>
-        <Drawer.Screen name="Home" component={Stack} />
+        <Drawer.Screen name="Início" component={Stack} />
         <Drawer.Screen name="Esportes" component={Search} />
         <Drawer.Screen name="Políticas" component={Search} />
         <Drawer.Screen name="Mundo" component={Search} />

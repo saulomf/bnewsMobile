@@ -2,16 +2,16 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import COLORS from "../../Shared/colors";
 import Home from "../../Pages/Home";
 import Details from "../../Pages/Details";
+import Search from "../../Pages/Search";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
 const Stack = () => {
 	return (
 		<Navigator
-			initialRouteName="Home"
 			screenOptions={{
 				contentStyle: {
-					backgroundColor: 'black',
+					backgroundColor: COLORS.black,
 				},
 				headerShown: false
 			}}
@@ -25,6 +25,11 @@ const Stack = () => {
 				name="Details"
 				options={{ title: "Detalhes" }}
 				component={Details}
+			/>
+			<Screen
+				name="Search"
+				options={{ title: "Busca" }}
+				component={Search}
 			/>
 		</Navigator>
 	);
