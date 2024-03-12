@@ -10,7 +10,7 @@ const DrawerNavigator = () => {
       <Drawer.Navigator initialRouteName='Menu' screenOptions={{
         headerStyle: { backgroundColor: COLORS.red },
         headerTitle: 'BRAZILIAN NEWS',
-        headerTitleStyle: { color: COLORS.gray, fontWeight: 'bold', alignSelf: 'center' },
+        headerTitleStyle: { color: COLORS.black, fontWeight: 'bold', alignSelf: 'center' },
         headerTitleAlign: 'center',
         drawerContentContainerStyle: { backgroundColor: COLORS.gray, flex: 1 },
         drawerInactiveBackgroundColor: COLORS.grayLight,

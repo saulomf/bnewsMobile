@@ -8,9 +8,9 @@ type NewsCardProps = {
 };
 
 const NewsCard = ({ news }:NewsCardProps ) => (
-    <View className={`min-h-[100] rounded-lg bg-[${COLORS.gray}]`}>
-        <Text className={`text-[18px] text-{${COLORS.white}}`}>{news.titulo}</Text>
-        <Text className={`text-[12px] text-white`}>{`Publicada em ${formatDate(news.data_publicacao)}`}</Text>
+    <View className={`min-h-[100] rounded-lg bg-[#111111] justify-between p-4 m-2`}>
+        <Text className={`text-[16px] text-[#AAAAAA]`}>{news.titulo}</Text>
+        <Text className={`text-[12px] text-white mt-2`}>{`Publicada em ${formatDate(news.data_publicacao)}h`}</Text>
     </View>
 );
 
